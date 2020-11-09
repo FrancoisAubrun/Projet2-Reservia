@@ -3,12 +3,15 @@
 <html>
    <head>
       <meta charset="UTF-8">
-
+   
        <!-- CSS -->
 
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
 
+       <!-- ICONS -->
+
+      <script src="https://kit.fontawesome.com/d6dc5bfd4b.js" crossorigin="anonymous"></script>
 
       <!-- Place this data between the <head> tags of your website -->
 <title>Reservia</title>
@@ -24,55 +27,138 @@
 <meta property="og:image" content="http://example.com/image.jpg"/>
 <meta property="og:description" content="Description Here"/>
    </head>
+
 <body>
 
    <!-- Header -->
    <header>
+      <div class="logo">
+         <img src="./images/logo/Reservia.svg"
+         alt="Reservia">
+      </div>
+     
+     <nav class="navbar">
+         <button class="btn-1">Hébergements</button>
+         <button class="btn-1">Activités</button>
+         <button class="btn-2">S'inscrire</button>
+     </nav>
    </header>
    
-   <!-- Section 1 -->
-   <section id="section_one">
-      <div class="container">
-         <div class=row1>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>Picture perfect</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-             </div>
-
-            <div class="col-md-4">
-               <img src="images/phone.png">
-             </div>
-      </div>
-     </div>
+   <!-- Search - bandeau de recherche par ville-->
+   <section id="search">
+      <div class="search">
+         <div class="text-search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en plein nature</p>
+         </div>
+         
+         <div class="form">
+              <i class="fas fa-map-marker-alt"></i>
+              <input class="form-control" type="search" placeholder="Ville">
+              <button class="btn btn-outline-success" type="submit">Rechercher</button>
+         </div>
+      </div>       
    </section> 
 
-   <!-- Section 2 Description -->
-   <section id="description">
+   <!-- Filtres - bandeau pour filtrer les résultats de la recherche -->
+   <section id="filtres">
+      <div class="filtres-row1">
+         <h2>Filtres</h2>
+         <div class="btn-filtres">
+               <button type="button" class="btn-filtres1"> <i class="fas fa-money-bill-wave"></i>Économique</button>
+               <button type="button" class="btn-filtres1"> <i class="fas fa-child"></i>Familial</button>
+               <button type="button" class="btn-filtres1"> <i class="fas fa-heart"></i>Romantique</button>
+               <button type="button" class="btn-filtres1"> <i class="fas fa-dog"></i>Animaux autorisés</button>
+         </div>
+      </div>
+      <div class="filtres-row2">
+         <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
    </section>
 
-   <!-- Section 3 Contenu mis en avant -->
-   <section id="featured_content">
+   <!-- Hebergements - Résultats de la combinaison recherche/filtres -->
+   <section id="hebergements">
+      <div class="hebergements">
+         <div class="hebergements-col1">
+            <div class= ".col-sm-3, .col-md-5, .col-lg-8 et .col-xl-8"> 
+               <h2>Hébergements à Marseille</h2>
+               <div class="hebergements-col1-row1">
+                  <div class="hebergements-col1-row1-bloc1">
+                     <h3>Auberge de la cannebière</h3>
+                     <p>nuit à partir de <strong>25 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star fa-star-grey"></i>
+                  </div>
+                  <div class="hebergements-col1-row1-bloc2">
+                     <h3>Hôtel du port</h3>
+                     <p>nuit à partir de <strong>52 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <div class="hebergements-col1-row1-bloc3">
+                     <h3>Hôtel Les mouettes</h3>
+                     <p>nuit à partir de <strong>76 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star fa-star-grey"></i>
+                  </div>
+               </div>
+               <div class="hebergements-col1-row2">
+                  <div class="hebergements-col1-row2-bloc1">
+                     <h3>Hôtel de la mer</h3>
+                     <p>nuit à partir de <strong>46 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star fa-star-grey"></i>
+                     <i class="fas fa-star fa-star-grey"></i>
+                  </div>
+                  <div class="hebergements-col1-row2-bloc2">
+                     <h3>Auberge Le Panier</h3>
+                     <p>nuit à partir de <strong>43 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star fa-star-grey"></i>
+                  </div>
+                  <div class="hebergements-col1-row2-bloc3">
+                     <h3>Hôtel chez Amina</h3>
+                     <p>nuit à partir de <strong>96 €</strong></p>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            <p class="afficherplus">Afficher plus</p>
+            </div>
+         </div>
+         
+         <div class="hebergements-col2">
+         <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
+         </div>
+         
+      </div>
+
    </section>
 
-   <!-- Section 4 Details -->
+   <!-- Activités - Résultats de la combinaison recherche/filtres -->
    <section id="details">
    </section>
 
 
-   <!-- Section 5 Big picture -->
-   <section id="big_picture">
-   </section>
-
-   <!-- Section 6 A propos -->
-   <section id="about">
-   </section>
-
-
-   <!-- Section 7 Gammes de prix  -->
-   <section id="price_ranges">
-   </section> 
-   
-   <footer>
+   <!-- Footer - affiche les autres infos utiles -->
+   <footer id="footer">
    </footer>
 
 </body>
