@@ -6,7 +6,6 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- ICONS -->
@@ -37,15 +36,27 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">
+      <div class="logo hidden_xs">
         <img src="./images/logo/Reservia.svg" alt="Reservia" />
       </div>
 
-      <nav class="navbar">
-        <button class="btn-1">Hébergements</button>
-        <button class="btn-1">Activités</button>
-        <button class="btn-2">S'inscrire</button>
+      <nav class="navbar hidden_xs">
+        <button class="btn-1 hidden_xs">Hébergements</button>
+        <button class="btn-1 hidden_xs">Activités</button>
+        <button class="btn-2 hidden_xs">S'inscrire</button>
       </nav>
+
+      <div class="bloc1-header-mobile">
+         <div class="logo hidden_xl">
+            <img src="./images/logo/Reservia.svg" alt="Reservia" />
+         </div>
+         <button class="btn-2 hidden_xl">S'inscrire</button>
+      </div>
+      <div class=bloc2-header-mobile >
+               <button class="btn-1 hidden_xl">Hébergements</button>
+               <button class="btn-1 hidden_xl">Activités</button>
+            </div>
+      </div>
     </header>
 
     <!-- Search - bandeau de recherche par ville-->
@@ -69,28 +80,30 @@
 
     <!-- Filtres - bandeau pour filtrer les résultats de la recherche -->
     <section id="filtres">
-      <div class="filtres-row1">
-        <h2>Filtres</h2>
-        <div class="btn-filtres">
-          <button type="button" class="btn-filtres1">
-            <i class="fas fa-money-bill-wave"></i>Économique
-          </button>
-          <button type="button" class="btn-filtres1">
-            <i class="fas fa-child"></i>Familial
-          </button>
-          <button type="button" class="btn-filtres1">
-            <i class="fas fa-heart"></i>Romantique
-          </button>
-          <button type="button" class="btn-filtres1">
-            <i class="fas fa-dog"></i>Animaux autorisés
-          </button>
+      <div class="filtres">
+        <div class="filtres-row1">
+          <h2>Filtres</h2>
+          <div class="btn-filtres">
+            <button type="button" class="btn-filtres1">
+              <i class="fas fa-money-bill-wave"></i>Économique
+            </button>
+            <button type="button" class="btn-filtres1">
+              <i class="fas fa-child"></i>Familial
+            </button>
+            <button type="button" class="btn-filtres1">
+              <i class="fas fa-heart"></i>Romantique
+            </button>
+            <button type="button" class="btn-filtres1">
+              <i class="fas fa-dog"></i>Animaux autorisés
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="filtres-row2">
-        <p>
-          <i class="fas fa-info"></i> Plus de 500 logements sont disponibles
-          dans cette ville
-        </p>
+        <div class="filtres-row2">
+          <p>
+            <i class="fas fa-info"></i> Plus de 500 logements sont disponibles
+            dans cette ville
+          </p>
+        </div>
       </div>
     </section>
 
